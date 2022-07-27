@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on klucas 的个人网站</title>
+    <link>https://yuanlucas.com/tags/</link>
+    <description>Recent content in Tags on klucas 的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MATLAB</title>
+      <link>https://yuanlucas.com/tags/matlab/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.com/tags/matlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>星空图</title>
+      <link>https://yuanlucas.com/tags/%E6%98%9F%E7%A9%BA%E5%9B%BE/</link>
+      <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.com/tags/%E6%98%9F%E7%A9%BA%E5%9B%BE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测试</title>
+      <link>https://yuanlucas.com/tags/%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.com/tags/%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
