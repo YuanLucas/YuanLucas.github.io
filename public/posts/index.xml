@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on klucas 的个人网站</title>
-    <link>https://yuanlucas.com/posts/</link>
+    <link>https://yuanlucas.github.io/posts/</link>
     <description>Recent content in Posts on klucas 的个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用MATLAB绘制氢原子电子云径向分布图</title>
-      <link>https://yuanlucas.com/posts/%E7%94%A8matlab%E7%BB%98%E5%88%B6%E6%B0%A2%E5%8E%9F%E5%AD%90%E7%94%B5%E5%AD%90%E4%BA%91%E5%BE%84%E5%90%91%E5%88%86%E5%B8%83%E5%9B%BE/</link>
+      <link>https://yuanlucas.github.io/posts/%E7%94%A8matlab%E7%BB%98%E5%88%B6%E6%B0%A2%E5%8E%9F%E5%AD%90%E7%94%B5%E5%AD%90%E4%BA%91%E5%BE%84%E5%90%91%E5%88%86%E5%B8%83%E5%9B%BE/</link>
       <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yuanlucas.com/posts/%E7%94%A8matlab%E7%BB%98%E5%88%B6%E6%B0%A2%E5%8E%9F%E5%AD%90%E7%94%B5%E5%AD%90%E4%BA%91%E5%BE%84%E5%90%91%E5%88%86%E5%B8%83%E5%9B%BE/</guid>
+      <guid>https://yuanlucas.github.io/posts/%E7%94%A8matlab%E7%BB%98%E5%88%B6%E6%B0%A2%E5%8E%9F%E5%AD%90%E7%94%B5%E5%AD%90%E4%BA%91%E5%BE%84%E5%90%91%E5%88%86%E5%B8%83%E5%9B%BE/</guid>
       <description>&lt;p&gt;绘制于大三学量子力学时。MATLAB 中的球坐标和物理中习惯的球坐标有点不一样。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>First Images from the James Webb Space Telescope</title>
-      <link>https://yuanlucas.com/posts/%E6%98%9F%E7%A9%BA%E5%9B%BE%E7%89%87/</link>
+      <link>https://yuanlucas.github.io/posts/%E6%98%9F%E7%A9%BA%E5%9B%BE%E7%89%87/</link>
       <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yuanlucas.com/posts/%E6%98%9F%E7%A9%BA%E5%9B%BE%E7%89%87/</guid>
+      <guid>https://yuanlucas.github.io/posts/%E6%98%9F%E7%A9%BA%E5%9B%BE%E7%89%87/</guid>
       <description>&lt;p&gt;詹姆斯·韦伯望远镜发来的第一组照片，真的很美。(from NASA)&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hello, world!</title>
-      <link>https://yuanlucas.com/posts/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</link>
+      <link>https://yuanlucas.github.io/posts/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</link>
       <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yuanlucas.com/posts/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</guid>
+      <guid>https://yuanlucas.github.io/posts/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</guid>
       <description>&lt;p&gt;Hello, world!&lt;/p&gt;
 &lt;p&gt;这是我的第一篇博文。&lt;/p&gt;</description>
     </item>

@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yuanlucas.com/categories/</loc>
+    <loc>https://yuanlucas.github.io/categories/</loc>
     <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuanlucas.com/</loc>
+    <loc>https://yuanlucas.github.io/</loc>
     <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuanlucas.com/tags/matlab/</loc>
+    <loc>https://yuanlucas.github.io/tags/matlab/</loc>
     <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuanlucas.com/posts/</loc>
+    <loc>https://yuanlucas.github.io/posts/</loc>
     <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuanlucas.com/tags/</loc>
+    <loc>https://yuanlucas.github.io/tags/</loc>
     <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuanlucas.com/categories/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/</loc>
+    <loc>https://yuanlucas.github.io/categories/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/</loc>
     <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuanlucas.com/posts/%E7%94%A8matlab%E7%BB%98%E5%88%B6%E6%B0%A2%E5%8E%9F%E5%AD%90%E7%94%B5%E5%AD%90%E4%BA%91%E5%BE%84%E5%90%91%E5%88%86%E5%B8%83%E5%9B%BE/</loc>
+    <loc>https://yuanlucas.github.io/posts/%E7%94%A8matlab%E7%BB%98%E5%88%B6%E6%B0%A2%E5%8E%9F%E5%AD%90%E7%94%B5%E5%AD%90%E4%BA%91%E5%BE%84%E5%90%91%E5%88%86%E5%B8%83%E5%9B%BE/</loc>
     <lastmod>2022-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuanlucas.com/about.html</loc>
+    <loc>https://yuanlucas.github.io/about.html</loc>
     <lastmod>2022-07-25T15:25:00+08:00</lastmod>
   </url><url>
-    <loc>https://yuanlucas.com/posts/%E6%98%9F%E7%A9%BA%E5%9B%BE%E7%89%87/</loc>
+    <loc>https://yuanlucas.github.io/posts/%E6%98%9F%E7%A9%BA%E5%9B%BE%E7%89%87/</loc>
     <lastmod>2022-07-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuanlucas.com/tags/%E6%98%9F%E7%A9%BA%E5%9B%BE/</loc>
+    <loc>https://yuanlucas.github.io/tags/%E6%98%9F%E7%A9%BA%E5%9B%BE/</loc>
     <lastmod>2022-07-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuanlucas.com/posts/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</loc>
+    <loc>https://yuanlucas.github.io/posts/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</loc>
     <lastmod>2022-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuanlucas.com/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <loc>https://yuanlucas.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2022-07-24T00:00:00+00:00</lastmod>
   </url>
 </urlset>
