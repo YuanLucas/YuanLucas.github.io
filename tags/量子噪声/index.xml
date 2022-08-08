@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>量子噪声 on klucas 的个人网站</title>
+    <link>https://yuanlucas.github.io/tags/%E9%87%8F%E5%AD%90%E5%99%AA%E5%A3%B0/</link>
+    <description>Recent content in 量子噪声 on klucas 的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 28 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/tags/%E9%87%8F%E5%AD%90%E5%99%AA%E5%A3%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Quantum Noise</title>
+      <link>https://yuanlucas.github.io/posts/introduction-to-quantum-noise/</link>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/introduction-to-quantum-noise/</guid>
+      <description>&lt;p&gt;  本文讨论量子噪声。&lt;/p&gt;
+&lt;p&gt;参考文献：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A.~A. Clerk, M.~H. Devoret, S.~M. Girvin, F. Marquardt, and R.~J. Schoelkopf, Introduction to Quantum Noise, Measurement and Amplification, Rev. Mod. Phys. 82, 1155 (2010).&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
