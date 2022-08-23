@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)" />
 <meta name="generator" content="Hugo 0.101.0" />
-<link rel="shortcut icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
-<link rel="icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
-<meta itemprop="name" content="Introduction to Quantum Noise" />
+<link rel="shortcut icon" type="image/x-icon" href="/imgs/my_logo.png">
+<link rel="icon" type="image/x-icon" href="/imgs/my_logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/imgs/my_logo.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imgs/my_logo.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/imgs/my_logo.png">
+<meta itemprop="name" content="量子噪声介绍和QuTiP模拟" />
 <meta itemprop="description" content="一位喜欢撸猫的研究僧。" />
 <meta itemprop="datePublished" ZgotmplZ />
 <meta itemprop="dateModified" ZgotmplZ />
@@ -18,7 +18,7 @@
 <meta itemprop="keywords" content="量子噪声" />
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Introduction to Quantum Noise" />
+<meta property="og:title" content="量子噪声介绍和QuTiP模拟" />
 <meta property="og:description" content="一位喜欢撸猫的研究僧。" />
 <meta property="og:image" content="/imgs/my_avatar.png" />
 <meta property="og:image:width" content="312" />
@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh-CN"/>
 <meta property="article:author" content="klucas" />
 <meta property="article:published_time" content="2022-07-28 00:00:00 &#43;0000 UTC" />
-<meta property="article:modified_time" content="2022-07-28 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2022-08-15 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -43,7 +43,7 @@
       content: "~ 我可是有底线的哟 ~";
     }
   </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"introduction-to-quantum-noise","permalink":"https://yuanlucas.github.io/posts/introduction-to-quantum-noise/","title":"Introduction to Quantum Noise"}</script>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"introduction-to-quantum-noise","permalink":"https://yuanlucas.github.io/posts/introduction-to-quantum-noise/","title":"量子噪声介绍和QuTiP模拟"}</script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     var script = document.createElement('script');
@@ -65,7 +65,7 @@
 
 
 
-  <title>Introduction to Quantum Noise - klucas 的个人网站</title>
+  <title>量子噪声介绍和QuTiP模拟 - klucas 的个人网站</title>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -164,6 +164,25 @@
         </li>
       </ul>
     </li>
+    <li><a href="#2-几个例子">2. 几个例子</a>
+      <ul>
+        <li>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+        <li><a href="#21-激发态原子的自发辐射-relaxation">2.1 激发态原子的自发辐射 Relaxation</a>
+          <ul>
+            <li><a href="#代码如下">代码如下：</a></li>
+          </ul>
+        </li>
+        <li><a href="#22-退相干-dephasing">2.2 退相干 Dephasing</a>
+          <ul>
+            <li><a href="#代码如下-1">代码如下：</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
       </div>
@@ -180,19 +199,19 @@
   <nav class="site-state">
     <div class="site-state-item site-state-posts">
       <a href="/posts/">
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">日志</span>
       </a>
     </div>
     <div class="site-state-item site-state-categories">
       <a href="/categories/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span>
       </a>
     </div>
     <div class="site-state-item site-state-tags">
       <a href="/tags/">
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span>
       </a>
     </div>
@@ -265,15 +284,22 @@
       <meta itemprop="description" content="一位喜欢撸猫的研究僧。">
     </span>
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Introduction to Quantum Noise">
+      <meta itemprop="name" content="量子噪声介绍和QuTiP模拟">
       <meta itemprop="description" content="  本文讨论量子噪声。
 参考文献：
 
 A.~A. Clerk, M.~H. Devoret, S.~M. Girvin, F. Marquardt, and R.~J. Schoelkopf, Introduction to Quantum Noise, Measurement and Amplification, Rev. Mod. Phys. 82, 1155 (2010).
+
+
+    Nielsen, Michael A., and Isaac L. Chuang. Quantum Computation and Quantum Information: 10th Anniversary Edition. Cambridge: Cambridge University Press, 2010.
+    
+
+J. R. Johansson, P.D. Nation, and F. Nori, “QuTiP 2: A Python framework for the dynamics of open quantum
+systems”, Comp. Phys. Comm. 184, 1234 (2013).
 ">
     </span>
     <header class="post-header">
-       <h1 class="post-title" itemprop="name headline">Introduction to Quantum Noise </h1> <div class="post-meta-container">
+       <h1 class="post-title" itemprop="name headline">量子噪声介绍和QuTiP模拟 </h1> <div class="post-meta-container">
   <div class="post-meta-items">
     
 
@@ -286,6 +312,14 @@ A.~A. Clerk, M.~H. Devoret, S.~M. Girvin, F. Marquardt, and R.~J. Schoelkopf, In
   <time title="发表于：2022-07-28 00:00:00 &#43;0000 UTC" itemprop="dateCreated datePublished" datetime="2022-07-28 00:00:00 &#43;0000 UTC">2022-07-28</time>
 </span>
     
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-calendar-check"></i>
+  </span>
+  <span class="post-meta-item-text">更新于：</span>
+  <time title="修改时间：2022-08-15T00:00:00&#43;00:00" itemprop="dateModified" datetime="2022-08-15T00:00:00&#43;00:00">2022-08-15</time>
+</span>
     
 <span class="post-meta-item">
   <span class="post-meta-item-icon">
@@ -305,7 +339,7 @@ A.~A. Clerk, M.~H. Devoret, S.~M. Girvin, F. Marquardt, and R.~J. Schoelkopf, In
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>368</span>
+  <span class="post-meta-item-text">字数：</span><span>1028</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -313,7 +347,7 @@ A.~A. Clerk, M.~H. Devoret, S.~M. Girvin, F. Marquardt, and R.~J. Schoelkopf, In
     <i class="far fa-clock"></i>
   </span>
   <span class="post-meta-item-text">阅读：&asymp;</span>
-  <span>1分钟</span>
+  <span>3分钟</span>
 </span>
 
     
@@ -338,6 +372,13 @@ A.~A. Clerk, M.~H. Devoret, S.~M. Girvin, F. Marquardt, and R.~J. Schoelkopf, In
 <p>参考文献：</p>
 <ol>
 <li>A.~A. Clerk, M.~H. Devoret, S.~M. Girvin, F. Marquardt, and R.~J. Schoelkopf, Introduction to Quantum Noise, Measurement and Amplification, Rev. Mod. Phys. 82, 1155 (2010).</li>
+<li>
+<a href="http://mmrc.amss.cas.cn/tlb/201702/W020170224608149940643.pdf" title="Nielsen, Michael A., and Isaac L. Chuang. Quantum Computation and Quantum Information: 10th Anniversary Edition. Cambridge: Cambridge University Press, 2010." rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    Nielsen, Michael A., and Isaac L. Chuang. Quantum Computation and Quantum Information: 10th Anniversary Edition. Cambridge: Cambridge University Press, 2010.
+    <i class="fa fa-external-link-alt"></i>
+</a></li>
+<li>J. R. Johansson, P.D. Nation, and F. Nori, “QuTiP 2: A Python framework for the dynamics of open quantum
+systems”, Comp. Phys. Comm. 184, 1234 (2013).</li>
 </ol>
 <h1 id="1-经典噪声和量子噪声">1. 经典噪声和量子噪声</h1>
 <h2 id="11-经典噪声">1.1 经典噪声</h2>
@@ -369,8 +410,208 @@ $$ S_{VV}[\omega]=S_{VV}[-\omega] $$</p>
 S_{xx}[\omega]=\int_{-\infty}^{+\infty}\mathrm{d}t e^{i\omega t}\langle \hat{x}(t)\hat{x}(0)\rangle \tag{1.2}
 $$</p>
 <p>  量子噪声的功率谱密度不为偶函数。</p>
-<p>$$ S_{VV}[\omega]\neq S_{VV}[-\omega] $$
-其正频率部分与被谐振子吸收的受迫辐射能量相关，其负频率部分与谐振子发出的辐射能量相关。</p>
+<p>$$ S_{VV}[\omega]\neq S_{VV}[-\omega] $$</p>
+<p>其正频率部分与被谐振子吸收的受迫辐射能量相关，其负频率部分与谐振子发出的辐射能量相关。</p>
+<h1 id="2-几个例子">2. 几个例子</h1>
+<p>  封闭孤立系统中的态变换可以用 Schrödinger 方程描述。</p>
+<p>  对于开放系统，态的变换不是幺正变换，需要用主方程（master equation）描述。</p>
+<h4 id="lindblad-master-equation">Lindblad Master Equation</h4>
+<p>$$
+\frac{\mathrm{d}\hat{\rho}}{\mathrm{d}t}=-\frac{i}{\hbar}[\hat{H},\hat{\rho}]+\sum_j \hat{L}_j\hat{\rho}\hat{L}_j^\dagger-\frac{1}{2}\{\hat{L}_j^\dagger\hat{L}_j, \hat{\rho}\}
+$$</p>
+<h2 id="21-激发态原子的自发辐射-relaxation">2.1 激发态原子的自发辐射 Relaxation</h2>
+<p>  以二能级系统为例</p>
+<p>$$ \hat{H}=\frac{\hbar\omega_q}{2}\hat{\sigma}_z $$</p>
+<p>定义：
+$$\ket{\uparrow}\equiv\ket{1} $$</p>
+<p>$$\ket{\downarrow}\equiv\ket{0} $$</p>
+<p>Lindblad 算符
+$$ \hat{L}=\sqrt{\gamma_r}\hat{\sigma}_-=\sqrt{\gamma_r}\ket{0}\bra{1} $$</p>
+<p>假设初态为\(\ket{\psi}=\ket{1}\)，代入 Lindblad 方程计算。</p>
+<p>省略计算过程得到：</p>
+<p>$$
+\hat{\rho}(t)=\begin{bmatrix}
+1-e^{-\gamma_r t}&amp;0\\
+0&amp;e^{-\gamma_r t}
+\end{bmatrix}
+$$</p>
+<p>用<code>QuTiP</code>模拟：</p>
+<p><img src="Relaxation.png" alt="Relaxation"></p>
+<p>  最终趋向稳态\(\ket{0}\)。</p>
+<h3 id="代码如下">代码如下：</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env python3</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># -*- coding: utf-8 -*-</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Created on Sun Aug 14 18:53:59 2022
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">@author: klucas
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> qutip <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> scipy.constants <span style="color:#66d9ef">as</span> C
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>omega_q <span style="color:#f92672">=</span> <span style="color:#ae81ff">1e9</span>
+</span></span><span style="display:flex;"><span>H <span style="color:#f92672">=</span> C<span style="color:#f92672">.</span>hbar <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1e12</span> <span style="color:#f92672">*</span> sigmaz()
+</span></span><span style="display:flex;"><span>psi0 <span style="color:#f92672">=</span> basis(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>gamma_r <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span>
+</span></span><span style="display:flex;"><span>times <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">1000.0</span>, <span style="color:#ae81ff">10000</span>)
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> mesolve(H, psi0, times, 
+</span></span><span style="display:flex;"><span>                 [np<span style="color:#f92672">.</span>sqrt(gamma_r) <span style="color:#f92672">*</span> Qobj([[<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>],[<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>]])], 
+</span></span><span style="display:flex;"><span>                 [sigmaz(), sigmax(), num(<span style="color:#ae81ff">2</span>)])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fig, ax <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>subplots(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">6</span>), dpi<span style="color:#f92672">=</span><span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>plot(times, result<span style="color:#f92672">.</span>expect[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>plot(times, result<span style="color:#f92672">.</span>expect[<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>plot(times, result<span style="color:#f92672">.</span>expect[<span style="color:#ae81ff">2</span>])
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>set_xlabel(<span style="color:#e6db74">&#39;Time&#39;</span>)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>set_ylabel(<span style="color:#e6db74">&#39;Expectation values&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Relaxation&#34;</span>)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>legend((<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;$\langle\sigma_z\rangle$&#34;</span>, 
+</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;$\langle\sigma_x\rangle$&#34;</span>, 
+</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;$\langle n \rangle$&#34;</span>), frameon <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show(fig)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 导出图片</span>
+</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#34;Relaxation.png&#34;</span>)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="22-退相干-dephasing">2.2 退相干 Dephasing</h2>
+<p>  描述退相干过程的 Lindblad 算符为：</p>
+<p>$$ \hat{L}=\sqrt{\frac{\gamma_\phi}{2}}\hat{\sigma}_z=\sqrt{\frac{\gamma_\phi}{2}}(\ket{1}\bra{1}-\ket{0}\bra{0}) $$</p>
+<p>假设初态为\(\ket{\psi}=\frac{1}{\sqrt2}(\ket{1}+\ket{0})\)，代入 Lindblad 方程计算。</p>
+<p>省略计算过程得到：</p>
+<p>$$
+\hat{\rho}(t)=\begin{bmatrix}
+1-\frac{1}{2}e^{-\gamma_r t}&amp;\frac{1}{2}e^{-(\frac{\gamma_\phi}{2}+\gamma_r) t}e^{i\omega_q t}\\
+\frac{1}{2}e^{-(\frac{\gamma_\phi}{2}+\gamma_r) t}e^{-i\omega_q t}&amp;\frac{1}{2}e^{-\gamma_r t}
+\end{bmatrix}
+$$</p>
+<p>用<code>QuTiP</code>模拟：</p>
+<p><img src="Dephasing.png" alt="Dephasing"></p>
+<h3 id="代码如下-1">代码如下：</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env python3</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># -*- coding: utf-8 -*-</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Created on Mon Aug 15 13:55:55 2022
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">@author: klucas
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> qutip <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> scipy.constants <span style="color:#66d9ef">as</span> C
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>omega_q <span style="color:#f92672">=</span> <span style="color:#ae81ff">1e9</span>
+</span></span><span style="display:flex;"><span>H <span style="color:#f92672">=</span> C<span style="color:#f92672">.</span>hbar <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1e12</span> <span style="color:#f92672">*</span> sigmaz()
+</span></span><span style="display:flex;"><span>psi0 <span style="color:#f92672">=</span> (basis(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>)<span style="color:#f92672">+</span>basis(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">0</span>))<span style="color:#f92672">.</span>unit()
+</span></span><span style="display:flex;"><span>gamma_r <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span>
+</span></span><span style="display:flex;"><span>gamma_phi <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span>
+</span></span><span style="display:flex;"><span>times <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">1000.0</span>, <span style="color:#ae81ff">10000</span>)
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> mesolve(H, psi0, times, 
+</span></span><span style="display:flex;"><span>                 [<span style="color:#f92672">-</span>np<span style="color:#f92672">.</span>sqrt(gamma_phi <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>)  <span style="color:#f92672">*</span> sigmaz()], 
+</span></span><span style="display:flex;"><span>                 [sigmaz(), sigmax(), num(<span style="color:#ae81ff">2</span>)])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fig, ax <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>subplots(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">6</span>), dpi<span style="color:#f92672">=</span><span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>plot(times, result<span style="color:#f92672">.</span>expect[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>plot(times, result<span style="color:#f92672">.</span>expect[<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>plot(times, result<span style="color:#f92672">.</span>expect[<span style="color:#ae81ff">2</span>])
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>set_xlabel(<span style="color:#e6db74">&#39;Time&#39;</span>)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>set_ylabel(<span style="color:#e6db74">&#39;Expectation values&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Dephasing&#34;</span>)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>legend((<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;$\langle\sigma_z\rangle$&#34;</span>, 
+</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;$\langle\sigma_x\rangle$&#34;</span>, 
+</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;$\langle n \rangle$&#34;</span>), frameon <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show(fig)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 导出图片</span>
+</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#34;Dephasing.png&#34;</span>)
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 
     </div>
     <footer class="post-footer">

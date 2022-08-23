@@ -6,7 +6,36 @@
     <description>Recent content in Posts on klucas 的个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 31 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>代码图片生成网站</title>
+      <link>https://yuanlucas.github.io/posts/%E4%BB%A3%E7%A0%81%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90%E7%BD%91%E7%AB%99/</link>
+      <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/%E4%BB%A3%E7%A0%81%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90%E7%BD%91%E7%AB%99/</guid>
+      <description>&lt;p&gt;  发现一个代码图片生成网站。&lt;/p&gt;
+&lt;p&gt;  
+&lt;a href=&#34;https://carbon.caiguang.cc/?bg=rgba%28171%2C&amp;#43;184%2C&amp;#43;195%2C&amp;#43;1%29&amp;amp;t=seti&amp;amp;wt=none&amp;amp;l=auto&amp;amp;width=680&amp;amp;ds=true&amp;amp;dsyoff=20px&amp;amp;dsblur=68px&amp;amp;wc=true&amp;amp;wa=true&amp;amp;pv=56px&amp;amp;ph=56px&amp;amp;ln=false&amp;amp;fl=1&amp;amp;fm=Hack&amp;amp;fs=14px&amp;amp;lh=133%25&amp;amp;si=false&amp;amp;es=2x&amp;amp;wm=false&#34; title=&#34;传送门&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    传送门
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;  网页加载有点慢。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>zsh: command not found: conda 问题解决</title>
+      <link>https://yuanlucas.github.io/posts/conda%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</link>
+      <pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/conda%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</guid>
+      <description>&lt;p&gt;  打算用&lt;code&gt;conda&lt;/code&gt;安装一个第三方包，结果显示&lt;code&gt;zsh: command not found: conda&lt;/code&gt;。在此，将实验得到的解决方案呈现如下。&lt;/p&gt;
+&lt;p&gt;参考：
+&lt;a href=&#34;https://zhuanlan.zhihu.com/p/158703094&#34; title=&#34;https://zhuanlan.zhihu.com/p/158703094&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    https://zhuanlan.zhihu.com/p/158703094
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>相图</title>
       <link>https://yuanlucas.github.io/posts/%E7%9B%B8%E5%9B%BE/</link>
@@ -31,7 +60,7 @@
     </item>
     
     <item>
-      <title>Introduction to Quantum Noise</title>
+      <title>量子噪声介绍和QuTiP模拟</title>
       <link>https://yuanlucas.github.io/posts/introduction-to-quantum-noise/</link>
       <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
       
@@ -40,6 +69,13 @@
 &lt;p&gt;参考文献：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;A.~A. Clerk, M.~H. Devoret, S.~M. Girvin, F. Marquardt, and R.~J. Schoelkopf, Introduction to Quantum Noise, Measurement and Amplification, Rev. Mod. Phys. 82, 1155 (2010).&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://mmrc.amss.cas.cn/tlb/201702/W020170224608149940643.pdf&#34; title=&#34;Nielsen, Michael A., and Isaac L. Chuang. Quantum Computation and Quantum Information: 10th Anniversary Edition. Cambridge: Cambridge University Press, 2010.&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    Nielsen, Michael A., and Isaac L. Chuang. Quantum Computation and Quantum Information: 10th Anniversary Edition. Cambridge: Cambridge University Press, 2010.
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;J. R. Johansson, P.D. Nation, and F. Nori, “QuTiP 2: A Python framework for the dynamics of open quantum
+systems”, Comp. Phys. Comm. 184, 1234 (2013).&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
     

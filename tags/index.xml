@@ -6,7 +6,25 @@
     <description>Recent content in Tags on klucas 的个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 31 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>工具</title>
+      <link>https://yuanlucas.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/tags/%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>conda</title>
+      <link>https://yuanlucas.github.io/tags/conda/</link>
+      <pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/tags/conda/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>相变</title>
       <link>https://yuanlucas.github.io/tags/%E7%9B%B8%E5%8F%98/</link>

@@ -8,7 +8,7 @@
     <language>zh-CN</language>
     <lastBuildDate>Thu, 28 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/tags/%E9%87%8F%E5%AD%90%E5%99%AA%E5%A3%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Introduction to Quantum Noise</title>
+      <title>量子噪声介绍和QuTiP模拟</title>
       <link>https://yuanlucas.github.io/posts/introduction-to-quantum-noise/</link>
       <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
       
@@ -17,6 +17,13 @@
 &lt;p&gt;参考文献：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;A.~A. Clerk, M.~H. Devoret, S.~M. Girvin, F. Marquardt, and R.~J. Schoelkopf, Introduction to Quantum Noise, Measurement and Amplification, Rev. Mod. Phys. 82, 1155 (2010).&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://mmrc.amss.cas.cn/tlb/201702/W020170224608149940643.pdf&#34; title=&#34;Nielsen, Michael A., and Isaac L. Chuang. Quantum Computation and Quantum Information: 10th Anniversary Edition. Cambridge: Cambridge University Press, 2010.&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    Nielsen, Michael A., and Isaac L. Chuang. Quantum Computation and Quantum Information: 10th Anniversary Edition. Cambridge: Cambridge University Press, 2010.
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;J. R. Johansson, P.D. Nation, and F. Nori, “QuTiP 2: A Python framework for the dynamics of open quantum
+systems”, Comp. Phys. Comm. 184, 1234 (2013).&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
     

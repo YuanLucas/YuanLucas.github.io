@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>conda on klucas 的个人网站</title>
+    <link>https://yuanlucas.github.io/tags/conda/</link>
+    <description>Recent content in conda on klucas 的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 12 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/tags/conda/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>zsh: command not found: conda 问题解决</title>
+      <link>https://yuanlucas.github.io/posts/conda%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</link>
+      <pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/conda%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</guid>
+      <description>&lt;p&gt;  打算用&lt;code&gt;conda&lt;/code&gt;安装一个第三方包，结果显示&lt;code&gt;zsh: command not found: conda&lt;/code&gt;。在此，将实验得到的解决方案呈现如下。&lt;/p&gt;
+&lt;p&gt;参考：
+&lt;a href=&#34;https://zhuanlan.zhihu.com/p/158703094&#34; title=&#34;https://zhuanlan.zhihu.com/p/158703094&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    https://zhuanlan.zhihu.com/p/158703094
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
