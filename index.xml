@@ -6,7 +6,30 @@
     <description>Recent content on klucas 的个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 23 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>测不准关系</title>
+      <link>https://yuanlucas.github.io/posts/%E6%B5%8B%E4%B8%8D%E5%87%86%E5%85%B3%E7%B3%BB/</link>
+      <pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/%E6%B5%8B%E4%B8%8D%E5%87%86%E5%85%B3%E7%B3%BB/</guid>
+      <description>本文主要讨论测不准关系的证明。 方法一 定义： $$\ket{\psi&amp;rsquo;}=(\xi \hat{F&amp;rsquo;}+i\hat{G&amp;rsquo;})\ket{\psi}$$ 其中有\(\hat{F&amp;rsquo;}=\hat{F}-\langle \hat{F}\rangle \)，\(\hat{G</description>
+    </item>
+    
+    <item>
+      <title>关于Bloch球的两种表示</title>
+      <link>https://yuanlucas.github.io/posts/%E5%85%B3%E4%BA%8Ebloch%E7%90%83%E7%9A%84%E4%B8%A4%E7%A7%8D%E8%A1%A8%E7%A4%BA/</link>
+      <pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/%E5%85%B3%E4%BA%8Ebloch%E7%90%83%E7%9A%84%E4%B8%A4%E7%A7%8D%E8%A1%A8%E7%A4%BA/</guid>
+      <description>&lt;p&gt;  本文主要讨论Bloch球的两种表示。&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;参考文献：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Naghiloo, Mahdi. ‘Introduction to Experimental Quantum Measurement with Superconducting Qubits’. arXiv, 18 April 2019.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;</description>
+    </item>
+    
     <item>
       <title>代码图片生成网站</title>
       <link>https://yuanlucas.github.io/posts/%E4%BB%A3%E7%A0%81%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90%E7%BD%91%E7%AB%99/</link>
