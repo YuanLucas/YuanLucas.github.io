@@ -6,14 +6,50 @@
     <description>Recent content in 量子力学 on klucas 的个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 16 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/tags/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/tags/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Magnus Expansion</title>
+      <link>https://yuanlucas.github.io/posts/magnus-expansion/</link>
+      <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/magnus-expansion/</guid>
+      <description>&lt;p&gt;  本文主要讨论Magnus Expansion。&lt;/p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hausdorff公式的证明与应用</title>
+      <link>https://yuanlucas.github.io/posts/hausdorff%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%81%E6%98%8E%E4%B8%8E%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Sun, 25 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/hausdorff%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%81%E6%98%8E%E4%B8%8E%E5%BA%94%E7%94%A8/</guid>
+      <description>&lt;p&gt;  本文主要讨论Sneddon 公式和Hausdorff公式的证明与应用。&lt;/p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>量子力学中的几何相位</title>
+      <link>https://yuanlucas.github.io/posts/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E4%B8%AD%E7%9A%84%E5%87%A0%E4%BD%95%E7%9B%B8%E4%BD%8D/</link>
+      <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E4%B8%AD%E7%9A%84%E5%87%A0%E4%BD%95%E7%9B%B8%E4%BD%8D/</guid>
+      <description>&lt;p&gt;  本文主要讨论量子力学中的几何相位。&lt;/p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>量子力学绘景</title>
+      <link>https://yuanlucas.github.io/posts/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E7%BB%98%E6%99%AF/</link>
+      <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E7%BB%98%E6%99%AF/</guid>
+      <description>&lt;p&gt;  本文主要讨论量子力学绘景。&lt;/p&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>测不准关系</title>
       <link>https://yuanlucas.github.io/posts/%E6%B5%8B%E4%B8%8D%E5%87%86%E5%85%B3%E7%B3%BB/</link>
       <pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://yuanlucas.github.io/posts/%E6%B5%8B%E4%B8%8D%E5%87%86%E5%85%B3%E7%B3%BB/</guid>
-      <description>本文主要讨论测不准关系的证明。 方法一 定义： $$\ket{\psi&amp;rsquo;}=(\xi \hat{F&amp;rsquo;}+i\hat{G&amp;rsquo;})\ket{\psi}$$ 其中有\(\hat{F&amp;rsquo;}=\hat{F}-\langle \hat{F}\rangle \)，\(\hat{G</description>
+      <description>&lt;p&gt;  本文主要讨论测不准关系的证明。&lt;/p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -26,8 +62,7 @@
 &lt;p&gt;参考文献：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Naghiloo, Mahdi. ‘Introduction to Experimental Quantum Measurement with Superconducting Qubits’. arXiv, 18 April 2019.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;</description>
+&lt;/ol&gt;</description>
     </item>
     
   </channel>

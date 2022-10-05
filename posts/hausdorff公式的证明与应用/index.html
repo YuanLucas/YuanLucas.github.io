@@ -10,21 +10,26 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/imgs/my_logo.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/my_logo.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/my_logo.png">
-<meta itemprop="name" content="热力学" />
+<meta itemprop="name" content="Hausdorff公式的证明与应用" />
 <meta itemprop="description" content="一位喜欢撸猫的研究僧。" />
+<meta itemprop="datePublished" ZgotmplZ />
+<meta itemprop="dateModified" ZgotmplZ />
 <meta itemprop="image" content="https://yuanlucas.github.io/imgs/my_avatar.png" />
-<meta itemprop="keywords" content="物理, 研究生" />
+<meta itemprop="keywords" content="量子力学" />
 
-<meta property="og:type" content="website" />
-<meta property="og:title" content="热力学" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Hausdorff公式的证明与应用" />
 <meta property="og:description" content="一位喜欢撸猫的研究僧。" />
 <meta property="og:image" content="/imgs/my_avatar.png" />
 <meta property="og:image:width" content="312" />
 <meta property="og:image:height" content="312" />
 <meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
-<meta property="og:url" content="https://yuanlucas.github.io/categories/%E7%83%AD%E5%8A%9B%E5%AD%A6/"/>
+<meta property="og:url" content="https://yuanlucas.github.io/posts/hausdorff%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%81%E6%98%8E%E4%B8%8E%E5%BA%94%E7%94%A8/"/>
 <meta property="og:site_name" content="klucas 的个人网站" />
 <meta property="og:locale" content="zh-CN"/>
+<meta property="article:author" content="klucas" />
+<meta property="article:published_time" content="2022-09-25 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2022-09-25 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -38,7 +43,7 @@
       content: "~ 我可是有底线的哟 ~";
     }
   </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":false,"path":"%E7%83%AD%E5%8A%9B%E5%AD%A6","permalink":"https://yuanlucas.github.io/categories/%E7%83%AD%E5%8A%9B%E5%AD%A6/","title":"热力学"}</script>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"hausdorff%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%81%E6%98%8E%E4%B8%8E%E5%BA%94%E7%94%A8","permalink":"https://yuanlucas.github.io/posts/hausdorff%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%81%E6%98%8E%E4%B8%8E%E5%BA%94%E7%94%A8/","title":"Hausdorff公式的证明与应用"}</script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     var script = document.createElement('script');
@@ -60,7 +65,7 @@
 
 
 
-  <title>热力学 - 分类 - klucas 的个人网站</title>
+  <title>Hausdorff公式的证明与应用 - klucas 的个人网站</title>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -126,7 +131,7 @@
   <span class="toggle-line"></span>
 </div>
 <aside class="sidebar">
-  <div class="sidebar-inner sidebar-overview-active">
+  <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
     <ul class="sidebar-nav">
       <li class="sidebar-nav-toc">
         文章目录
@@ -138,6 +143,22 @@
     <div class="sidebar-panel-container">
       
       <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#sneddon-公式">Sneddon 公式</a></li>
+        <li><a href="#hausdorff-公式的证明">Hausdorff 公式的证明</a></li>
+        <li><a href="#几个例子">几个例子</a>
+          <ul>
+            <li><a href="#1-eiomega-thatadaggerhatahatae-iomega-thatadaggerhata">1. \(e^{i\omega t\hat{a}\dagger\hat{a}}\hat{a}e^{-i\omega t\hat{a}\dagger\hat{a}}\)</a></li>
+            <li><a href="#2-eithetahatj_z-hatj_e-ithetahatj_z">2. \(e^{i\theta\hat{J}_z} \hat{J}_+e^{-i\theta\hat{J}_z}\)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
       </div>
       
       <div class="site-overview-wrap sidebar-panel">
@@ -223,65 +244,210 @@
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
-    <div class="main-inner categories posts-collapse">
+    <div class="main-inner post posts-expand">
       
-<div class="post-block">
-  <div class="post-content">
-    <div class="collection-title">
-      <span class="collection-header">
-        <h2>
-        热力学
-        <small>分类</small>
-      </h2>
-      </span>
-    </div>
-
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://yuanlucas.github.io/posts/hausdorff%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%81%E6%98%8E%E4%B8%8E%E5%BA%94%E7%94%A8/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/my_avatar.png">
+      <meta itemprop="name" content="klucas">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="klucas">
+      <meta itemprop="description" content="一位喜欢撸猫的研究僧。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Hausdorff公式的证明与应用">
+      <meta itemprop="description" content="  本文主要讨论Sneddon 公式和Hausdorff公式的证明与应用。">
+    </span>
+    <header class="post-header">
+       <h1 class="post-title" itemprop="name headline">Hausdorff公式的证明与应用 </h1> <div class="post-meta-container">
+  <div class="post-meta-items">
     
-  
-<div class="collection-year">
-  <span class="collection-header">2022</span>
-</div>
-
-<article itemscope itemtype="http://schema.org/Article">
-  <header class="post-header">
-    <div class="post-meta-container">
-      
-      <time itemprop="dateCreated" datetime="2022-07-31T00:00:00&#43;00:00" content="07-31">
-        07-31
-      </time>
-    </div>
-    <div class="post-title">
-      <a class="post-title-link" href="https://yuanlucas.github.io/posts/%E7%9B%B8%E5%9B%BE/" itemprop="url">
-        <span itemprop="name">相图</span>
-      </a>
-    </div>
-  </header>
-</article>
-
-<article itemscope itemtype="http://schema.org/Article">
-  <header class="post-header">
-    <div class="post-meta-container">
-      
-      <time itemprop="dateCreated" datetime="2022-07-29T00:00:00&#43;00:00" content="07-29">
-        07-29
-      </time>
-    </div>
-    <div class="post-title">
-      <a class="post-title-link" href="https://yuanlucas.github.io/posts/%E4%BD%8E%E6%B8%A9%E6%B5%8B%E9%87%8F/" itemprop="url">
-        <span itemprop="name">低温测量相关的传热问题</span>
-      </a>
-    </div>
-  </header>
-</article>
 
 
- 
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text">发表于：</span>
+  <time title="发表于：2022-09-25 00:00:00 &#43;0000 UTC" itemprop="dateCreated datePublished" datetime="2022-09-25 00:00:00 &#43;0000 UTC">2022-09-25</time>
+</span>
+    
     
   </div>
+  <div class="post-meta-items">
+    
+<span class="post-meta-item" title="字数">
+  <span class="post-meta-item-icon">
+    <i class="far fa-file-word"></i>
+  </span>
+  <span class="post-meta-item-text">字数：</span><span>260</span>
+</span>
+    
+<span class="post-meta-item" title="阅读">
+  <span class="post-meta-item-icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span class="post-meta-item-text">阅读：&asymp;</span>
+  <span>1分钟</span>
+</span>
+
+    
+<span class="post-meta-item" title="浏览">
+  <span class="post-meta-item-icon">
+    <i class="far fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  浏览：
+  </span>
+  <span class="waline-pageview-count" data-path="/posts/hausdorff%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%81%E6%98%8E%E4%B8%8E%E5%BA%94%E7%94%A8/"><i class="fa fa-sync fa-spin"></i></span>
+</span>
+
+  </div>
+  
 </div>
-<nav class="pagination">
-        <span class="page-number current">1</span>
-</nav>
+
+    </header>
+    <div class="post-body" itemprop="articleBody">
+      
+  <p>  本文主要讨论Sneddon 公式和Hausdorff公式的证明与应用。</p></p>
+<hr>
+<h2 id="sneddon-公式">Sneddon 公式</h2>
+<p>考察如下算符的变化
+$$\begin{align}
+\frac{\mathrm{d}}{\mathrm{d}t}e^{\hat{A}(t)}&amp;=\sum^\infty_{m=0}\frac{1}{m!}\frac{\mathrm{d}\hat{A}^m}{\mathrm{d}t}\\
+&amp;=\sum^\infty_{m=0}\frac{1}{(m+1)!}\sum^m_{k=0}\hat{A}^k\partial_t\hat{A}\hat{A}^{m-k}\\
+&amp;=\sum_{n,k}\frac{1}{(n+k+1)!}\hat{A}^k\partial_t\hat{A}\hat{A}^n\tag{1}
+\end{align}$$</p>
+<p>这个式子比较难算，构造积分
+$$\begin{align}
+\int^1_0e^{u\hat{A}}\partial_t\hat{A}e^{(1-u)\hat{A}}\mathrm{d}u&amp;=\sum_{n,m}\int_0^1\frac{u^n\hat{A}^n}{n!}\partial_t\hat{A}\frac{(1-u)^m\hat{A}^m}{m!}\mathrm{d}u\\
+&amp;=\sum_{n,m}\frac{1}{n!m!}\hat{A}^n\partial_t\hat{A}\hat{A}^m\int_0^1u^n(1-u)^m\mathrm{d}u\tag{2}
+\end{align}$$</p>
+<p>由Beta函数
+$$
+B(\alpha,\beta)=\int_0^1x^{\alpha-1}(1-x)^{\beta-1}\mathrm{d}x=\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
+$$</p>
+<p>于是(2)式可以写成
+$$\begin{align}
+\int^1_0e^{u\hat{A}}\partial_t\hat{A}e^{(1-u)\hat{A}}\mathrm{d}u&amp;=\sum_{n,m}\frac{1}{n!m!}\hat{A}^n\partial_t\hat{A}\hat{A}^m\frac{(n+1)!(m+1)!}{(n+m+2)!}\\
+&amp;=\sum_{n,m}\frac{1}{(n+m+1)!}\hat{A}^n\partial_t\hat{A}\hat{A}^m
+\end{align}$$</p>
+<p>与(1)式对照，于是有
+$$\begin{align}
+\frac{\mathrm{d}}{\mathrm{d}t}e^{\hat{A}(t)}&amp;=(\int^1_0e^{u\hat{A}}\partial_t\hat{A}e^{-u\hat{A}}\mathrm{d}u)e^{\hat{A}(t)}\tag{3}
+\end{align}$$</p>
+<p>被称为Sneddon公式。</p>
+<h2 id="hausdorff-公式的证明">Hausdorff 公式的证明</h2>
+<p>  构造函数
+$$
+f(x)=e^{\hat{B}x}\hat{A}e^{-\hat{B}x}
+$$</p>
+<p>对\(x\)求导得
+$$\begin{align}
+\frac{\partial f}{\partial x}&amp;=\frac{\partial}{\partial x}e^{\hat{B}x}\hat{A}e^{-\hat{B}x}\\
+&amp;=\partial_xe^{\hat{B}x}\hat{A}e^{-\hat{B}x}+e^{\hat{B}x}\partial_x\hat{A}e^{-\hat{B}x}+e^{\hat{B}x}\hat{A}\partial_x e^{-\hat{B}x}\\
+&amp;=\hat{B}f(x)-f(x)\hat{B}\\
+&amp;=[\hat{B},f(x)]
+\end{align}$$</p>
+<p>于是有
+$$\begin{align}
+f(x)=&amp;f(0)+\int^x_0[\hat{B},f(x&rsquo;)]\mathrm{d}x&rsquo;\\
+=&amp;\hat{A}+\int^x_0[\hat{B},f(x&rsquo;)]\mathrm{d}x&rsquo;\\
+=&amp;\hat{A}+\int^x_0[\hat{B},\hat{A}+\int^{x&rsquo;}_0[\hat{B},f(x&rsquo;&rsquo;)]\mathrm{d}x&rsquo;&rsquo;]\mathrm{d}x&rsquo;\\
+=&amp;\hat{A}+\int^x_0[\hat{B},\hat{A}]\mathrm{d}x&rsquo;+\int^x_0[\hat{B},\int^{x&rsquo;}_0[\hat{B},f(x&rsquo;&rsquo;)]\mathrm{d}x&rsquo;&rsquo;]\mathrm{d}x&rsquo;\\
+=&amp;\hat{A}+\int^x_0[\hat{B},\hat{A}]\mathrm{d}x&rsquo;+\int^x_0\int^{x&rsquo;}_0[\hat{B},[\hat{B},f(x&rsquo;&rsquo;)]]\mathrm{d}x&rsquo;&rsquo;\mathrm{d}x&rsquo;\\
+=&amp;\hat{A}+[\hat{B},\hat{A}]\int^x_0\mathrm{d}x&rsquo;+[\hat{B},[\hat{B},\hat{A}]]\int^x_0\int^{x&rsquo;}_0\mathrm{d}x&rsquo;&rsquo;\mathrm{d}x&rsquo;\\
+&amp;\quad+[\hat{B},[\hat{B},[\hat{B},\hat{A}]]]\int^x_0\int^{x&rsquo;}_0\int^{x&rsquo;&rsquo;}_0\mathrm{d}x&rsquo;&rsquo;&rsquo;\mathrm{d}x&rsquo;&rsquo;\mathrm{d}x&rsquo;+\dots
+\end{align}$$</p>
+<p>对于\(f(1)\)，可以得到
+$$\begin{align}
+e^{\hat{B}}\hat{A}e^{-\hat{B}}=&amp;\hat{A}+[\hat{B},\hat{A}]+\frac{1}{2}[\hat{B},[\hat{B},\hat{A}]]+\frac{1}{3!}[\hat{B},[\hat{B},[\hat{B},\hat{A}]]]+\dots\\
+&amp;\quad+\frac{1}{n!}[\hat{B},[\hat{B},[\dots[\hat{B},[\hat{B},\hat{A}]]\dots]]]+\dots
+\end{align}$$</p>
+<p>即Hausdorff公式。</p>
+<h2 id="几个例子">几个例子</h2>
+<h3 id="1-eiomega-thatadaggerhatahatae-iomega-thatadaggerhata">1. \(e^{i\omega t\hat{a}\dagger\hat{a}}\hat{a}e^{-i\omega t\hat{a}\dagger\hat{a}}\)</h3>
+<p>代入Hausdorff公式有
+$$
+\frac{1}{n!}[\hat{B},[\hat{B},[\dots[\hat{B},[\hat{B},\hat{A}]]\dots]]]=\frac{1}{n!}(-i\omega t)^n\hat{a}
+$$</p>
+<p>于是有
+$$\begin{align}
+e^{i\omega t\hat{a}\dagger\hat{a}}\hat{a}e^{-i\omega t\hat{a}\dagger\hat{a}}&amp;=\sum^{\infty}_{n=0}\frac{1}{n!}(-i\omega t)^n\hat{a}\\
+&amp;=e^{-i\omega t}\hat{a}
+\end{align}$$</p>
+<h3 id="2-eithetahatj_z-hatj_e-ithetahatj_z">2. \(e^{i\theta\hat{J}_z} \hat{J}_+e^{-i\theta\hat{J}_z}\)</h3>
+<p>代入Hausdorff公式有
+$$
+\frac{1}{n!}[\hat{B},[\hat{B},[\dots[\hat{B},[\hat{B},\hat{A}]]\dots]]]=\frac{1}{n!}(-i\theta\hat{J}_z)^n\hat{J}_+
+$$</p>
+<p>于是有
+$$\begin{align}
+e^{i\theta\hat{J}_z} \hat{J}_+e^{-i\theta\hat{J}_z}&amp;=\sum^{\infty}_{n=0}\frac{1}{n!}(-i\theta\hat{J}_z)^n\hat{J}_{+}\\
+&amp;=e^{-i\theta\hat{J}_z}\hat{J}_{+}
+\end{align}$$</p>
+
+    </div>
+    <footer class="post-footer">
+      
+
+<div class="post-tags">
+  
+    <a href="/tags/%e9%87%8f%e5%ad%90%e5%8a%9b%e5%ad%a6">
+    量子力学
+  </a>
+</div>
+
+<div class="addthis_inline_share_toolbox" style="text-align: center;"></div>
+<hr/>
+
+
+
+
+<div class="post-nav">
+  <div class="post-nav-next post-nav-item">
+    <a href="https://yuanlucas.github.io/posts/%E8%B6%85%E5%AF%BC%E7%90%86%E8%AE%BA%E4%B8%80/" rel="next" title="超导唯象理论">
+      <i class="fa fa-chevron-left"></i> 超导唯象理论
+    </a>
+  </div>
+  <div class="post-nav-prev post-nav-item">
+    <a href="https://yuanlucas.github.io/posts/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E4%B8%AD%E7%9A%84%E5%87%A0%E4%BD%95%E7%9B%B8%E4%BD%8D/" rel="prev" title="量子力学中的几何相位">
+      量子力学中的几何相位
+      <i class="fa fa-chevron-right"></i>
+    </a>
+  </div>
+</div>
+    </footer>
+  </article>
+</div>
+<div class="post-comments">
+  <div class="comment-head">
+    <div class="comment-headline">
+      <i class="fas fa-comments fa-fw"></i>
+      <span>评论交流</span>
+    </div>
+    <div class="comment-switch">
+      <span class="first-comment">Giscus</span>
+      <span class="switch-btn "></span>
+      <span class="second-comment">Waline</span>
+    </div>
+  </div>
+  <div class="comment-wrap">
+  
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="giscus-container"></div>
+    </div>
+    <div><div class="comment-loading">
+  <i class="fa fa-sync fa-spin"></i>
+</div><div class="waline-container"></div>
+    </div>
+  </div>
+</div>
+
     </div>
   </main>
   <footer class="footer">
