@@ -10,7 +10,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/imgs/my_logo.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/my_logo.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/my_logo.png">
-<meta itemprop="name" content="Hausdorff公式的证明与应用" />
+<meta itemprop="name" content="量子力学常用公式" />
 <meta itemprop="description" content="一位喜欢撸猫的研究僧。" />
 <meta itemprop="datePublished" ZgotmplZ />
 <meta itemprop="dateModified" ZgotmplZ />
@@ -18,7 +18,7 @@
 <meta itemprop="keywords" content="量子力学" />
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Hausdorff公式的证明与应用" />
+<meta property="og:title" content="量子力学常用公式" />
 <meta property="og:description" content="一位喜欢撸猫的研究僧。" />
 <meta property="og:image" content="/imgs/my_avatar.png" />
 <meta property="og:image:width" content="312" />
@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh-CN"/>
 <meta property="article:author" content="klucas" />
 <meta property="article:published_time" content="2022-09-25 00:00:00 &#43;0000 UTC" />
-<meta property="article:modified_time" content="2022-09-25 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2022-10-20 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -43,7 +43,7 @@
       content: "~ 我可是有底线的哟 ~";
     }
   </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"hausdorff%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%81%E6%98%8E%E4%B8%8E%E5%BA%94%E7%94%A8","permalink":"https://yuanlucas.github.io/posts/hausdorff%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%81%E6%98%8E%E4%B8%8E%E5%BA%94%E7%94%A8/","title":"Hausdorff公式的证明与应用"}</script>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"hausdorff%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%81%E6%98%8E%E4%B8%8E%E5%BA%94%E7%94%A8","permalink":"https://yuanlucas.github.io/posts/hausdorff%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%81%E6%98%8E%E4%B8%8E%E5%BA%94%E7%94%A8/","title":"量子力学常用公式"}</script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     var script = document.createElement('script');
@@ -65,7 +65,7 @@
 
 
 
-  <title>Hausdorff公式的证明与应用 - klucas 的个人网站</title>
+  <title>量子力学常用公式 - klucas 的个人网站</title>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -155,6 +155,7 @@
             <li><a href="#2-eithetahatj_z-hatj_e-ithetahatj_z">2. \(e^{i\theta\hat{J}_z} \hat{J}_+e^{-i\theta\hat{J}_z}\)</a></li>
           </ul>
         </li>
+        <li><a href="#glauber-公式">Glauber 公式</a></li>
       </ul>
     </li>
   </ul>
@@ -173,7 +174,7 @@
   <nav class="site-state">
     <div class="site-state-item site-state-posts">
       <a href="/posts/">
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">20</span>
         <span class="site-state-item-name">日志</span>
       </a>
     </div>
@@ -185,7 +186,7 @@
     </div>
     <div class="site-state-item site-state-tags">
       <a href="/tags/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">标签</span>
       </a>
     </div>
@@ -258,11 +259,12 @@
       <meta itemprop="description" content="一位喜欢撸猫的研究僧。">
     </span>
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Hausdorff公式的证明与应用">
-      <meta itemprop="description" content="  本文主要讨论Sneddon 公式和Hausdorff公式的证明与应用。">
+      <meta itemprop="name" content="量子力学常用公式">
+      <meta itemprop="description" content="  本文主要讨论Sneddon公式和Hausdorff公式的证明与应用。
+10.20 增加了Glauber公式的证明。">
     </span>
     <header class="post-header">
-       <h1 class="post-title" itemprop="name headline">Hausdorff公式的证明与应用 </h1> <div class="post-meta-container">
+       <h1 class="post-title" itemprop="name headline">量子力学常用公式 </h1> <div class="post-meta-container">
   <div class="post-meta-items">
     
 
@@ -275,6 +277,14 @@
   <time title="发表于：2022-09-25 00:00:00 &#43;0000 UTC" itemprop="dateCreated datePublished" datetime="2022-09-25 00:00:00 &#43;0000 UTC">2022-09-25</time>
 </span>
     
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="far fa-calendar-check"></i>
+  </span>
+  <span class="post-meta-item-text">更新于：</span>
+  <time title="修改时间：2022-10-20T00:00:00&#43;00:00" itemprop="dateModified" datetime="2022-10-20T00:00:00&#43;00:00">2022-10-20</time>
+</span>
     
   </div>
   <div class="post-meta-items">
@@ -283,7 +293,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>260</span>
+  <span class="post-meta-item-text">字数：</span><span>394</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -312,7 +322,8 @@
     </header>
     <div class="post-body" itemprop="articleBody">
       
-  <p>  本文主要讨论Sneddon 公式和Hausdorff公式的证明与应用。</p></p>
+  <p>  本文主要讨论Sneddon公式和Hausdorff公式的证明与应用。</p></p>
+<p>10.20 增加了Glauber公式的证明。</p>
 <hr>
 <h2 id="sneddon-公式">Sneddon 公式</h2>
 <p>考察如下算符的变化
@@ -336,9 +347,9 @@ $$\begin{align}
 &amp;=\sum_{n,m}\frac{1}{(n+m+1)!}\hat{A}^n\partial_t\hat{A}\hat{A}^m
 \end{align}$$</p>
 <p>与(1)式对照，于是有
-$$\begin{align}
-\frac{\mathrm{d}}{\mathrm{d}t}e^{\hat{A}(t)}&amp;=(\int^1_0e^{u\hat{A}}\partial_t\hat{A}e^{-u\hat{A}}\mathrm{d}u)e^{\hat{A}(t)}\tag{3}
-\end{align}$$</p>
+$$\boxed{\begin{align}
+\frac{\mathrm{d}}{\mathrm{d}t}e^{\hat{A}(t)}&amp;=\left(\int^1_0e^{u\hat{A}}\partial_t\hat{A}e^{-u\hat{A}}\mathrm{d}u\right)e^{\hat{A}(t)}
+\end{align}}$$</p>
 <p>被称为Sneddon公式。</p>
 <h2 id="hausdorff-公式的证明">Hausdorff 公式的证明</h2>
 <p>  构造函数
@@ -363,10 +374,10 @@ f(x)=&amp;f(0)+\int^x_0[\hat{B},f(x&rsquo;)]\mathrm{d}x&rsquo;\\
 &amp;\quad+[\hat{B},[\hat{B},[\hat{B},\hat{A}]]]\int^x_0\int^{x&rsquo;}_0\int^{x&rsquo;&rsquo;}_0\mathrm{d}x&rsquo;&rsquo;&rsquo;\mathrm{d}x&rsquo;&rsquo;\mathrm{d}x&rsquo;+\dots
 \end{align}$$</p>
 <p>对于\(f(1)\)，可以得到
-$$\begin{align}
+$$\boxed{\begin{align}
 e^{\hat{B}}\hat{A}e^{-\hat{B}}=&amp;\hat{A}+[\hat{B},\hat{A}]+\frac{1}{2}[\hat{B},[\hat{B},\hat{A}]]+\frac{1}{3!}[\hat{B},[\hat{B},[\hat{B},\hat{A}]]]+\dots\\
 &amp;\quad+\frac{1}{n!}[\hat{B},[\hat{B},[\dots[\hat{B},[\hat{B},\hat{A}]]\dots]]]+\dots
-\end{align}$$</p>
+\end{align}}$$</p>
 <p>即Hausdorff公式。</p>
 <h2 id="几个例子">几个例子</h2>
 <h3 id="1-eiomega-thatadaggerhatahatae-iomega-thatadaggerhata">1. \(e^{i\omega t\hat{a}\dagger\hat{a}}\hat{a}e^{-i\omega t\hat{a}\dagger\hat{a}}\)</h3>
@@ -389,6 +400,40 @@ $$\begin{align}
 e^{i\theta\hat{J}_z} \hat{J}_+e^{-i\theta\hat{J}_z}&amp;=\sum^{\infty}_{n=0}\frac{1}{n!}(-i\theta\hat{J}_z)^n\hat{J}_{+}\\
 &amp;=e^{-i\theta\hat{J}_z}\hat{J}_{+}
 \end{align}$$</p>
+<h2 id="glauber-公式">Glauber 公式</h2>
+<p>  考虑特殊情况：
+$$
+[\hat{A},[\hat{A},\hat{B}]]=0,\quad[\hat{B},[\hat{A},\hat{B}]]=0
+$$</p>
+<p>构造：
+$$
+e^{\lambda\hat{A}+\lambda\hat{B}}=e^{\lambda\hat{A}}e^{\lambda\hat{B}}\underbrace{e^{-\lambda\hat{B}}e^{-\lambda\hat{A}}e^{\lambda\hat{A}+\lambda\hat{B}}}_{G(\lambda)=e^{F(\lambda)}}
+$$</p>
+<p>对\(G(\lambda)\)求导：
+$$\begin{align}
+\frac{\mathrm{d}G(\lambda)}{\mathrm{d}\lambda}&amp;=\frac{\mathrm{d}F}{\mathrm{d}\lambda}\frac{\mathrm{d}G(\lambda)}{\mathrm{d}F}=\frac{\mathrm{d}F}{\mathrm{d}\lambda}G\\
+&amp;=-\hat{B}G-e^{\lambda\hat{B}}\hat{A}e^{-\lambda\hat{A}}e^{\lambda\hat{A}+\lambda\hat{B}}+e^{-\lambda\hat{B}}e^{-\lambda\hat{A}}(\hat{A}+\hat{B})e^{\lambda\hat{A}+\lambda\hat{B}}\\
+&amp;=-\hat{B}G+e^{-\lambda\hat{B}}e^{-\lambda\hat{A}}\hat{B}e^{\lambda\hat{A}+\lambda\hat{B}}
+\end{align}$$</p>
+<p>于是有：
+$$\begin{align}
+\frac{\mathrm{d}F}{\mathrm{d}\lambda}&amp;=-\hat{B}+e^{-\lambda\hat{B}}e^{-\lambda\hat{A}}\hat{B}e^{\lambda\hat{A}}e^{\lambda\hat{B}}\\
+&amp;=-\hat{B}+e^{-\lambda\hat{B}}\left(\hat{B}-\lambda[\hat{A},\hat{B}]+\frac{(-\lambda)^2}{2}[\hat{A},[\hat{A},\hat{B}]]+\dots\right)e^{\lambda\hat{B}}\\
+&amp;=-\lambda[\hat{A},\hat{B}]
+\end{align}$$</p>
+<p>于是可以直接写出\(F(\lambda)\)：
+$$
+F(\lambda)=F(0)-\frac{\lambda^2}{2}[\hat{A},\hat{B}]
+$$</p>
+<p>对于\(\lambda=1\)有：
+$$
+F(1)=-\frac{[\hat{A},\hat{B}]}{2}
+$$</p>
+<p>于是有：
+$$
+\boxed{e^{\hat{A}+\hat{B}}=e^\hat{A}e^\hat{B}e^{-\frac{[\hat{A},\hat{B}]}{2}}}
+$$</p>
+<p>被称为Glauber公式。</p>
 
     </div>
     <footer class="post-footer">

@@ -6,7 +6,33 @@
     <description>Recent content in 量子力学 on klucas 的个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 05 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/tags/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/tags/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CHSH不等式</title>
+      <link>https://yuanlucas.github.io/posts/chsh%E4%B8%8D%E7%AD%89%E5%BC%8F/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/chsh%E4%B8%8D%E7%AD%89%E5%BC%8F/</guid>
+      <description>&lt;p&gt;  本文主要讨论CHSH不等式，算是Bell不等式的升级版吧。&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;相关文献：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;CHSH提出的论文 
+&lt;a href=&#34;https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.23.880&#34; title=&#34;https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.23.880&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;
+    https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.23.880
+    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>量子力学中的测量理论</title>
+      <link>https://yuanlucas.github.io/posts/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E4%B8%AD%E7%9A%84%E6%B5%8B%E9%87%8F%E7%90%86%E8%AE%BA/</link>
+      <pubDate>Fri, 07 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E4%B8%AD%E7%9A%84%E6%B5%8B%E9%87%8F%E7%90%86%E8%AE%BA/</guid>
+      <description>&lt;p&gt;  本文主要讨论量子力学中测量理论。&lt;/p&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Magnus Expansion</title>
       <link>https://yuanlucas.github.io/posts/magnus-expansion/</link>
@@ -17,12 +43,13 @@
     </item>
     
     <item>
-      <title>Hausdorff公式的证明与应用</title>
+      <title>量子力学常用公式</title>
       <link>https://yuanlucas.github.io/posts/hausdorff%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%81%E6%98%8E%E4%B8%8E%E5%BA%94%E7%94%A8/</link>
       <pubDate>Sun, 25 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://yuanlucas.github.io/posts/hausdorff%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%81%E6%98%8E%E4%B8%8E%E5%BA%94%E7%94%A8/</guid>
-      <description>&lt;p&gt;  本文主要讨论Sneddon 公式和Hausdorff公式的证明与应用。&lt;/p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;  本文主要讨论Sneddon公式和Hausdorff公式的证明与应用。&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;10.20 增加了Glauber公式的证明。&lt;/p&gt;</description>
     </item>
     
     <item>
