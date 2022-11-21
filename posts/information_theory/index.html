@@ -10,26 +10,26 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/imgs/my_logo.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/imgs/my_logo.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/imgs/my_logo.png">
-<meta itemprop="name" content="关于一切" />
+<meta itemprop="name" content="信息论" />
 <meta itemprop="description" content="一位喜欢撸猫的研究僧。" />
 <meta itemprop="datePublished" ZgotmplZ />
 <meta itemprop="dateModified" ZgotmplZ />
 <meta itemprop="image" content="https://yuanlucas.github.io/imgs/my_avatar.png" />
-<meta itemprop="keywords" content="物理, 研究生" />
+<meta itemprop="keywords" content="量子信息" />
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="关于一切" />
+<meta property="og:title" content="信息论" />
 <meta property="og:description" content="一位喜欢撸猫的研究僧。" />
 <meta property="og:image" content="/imgs/my_avatar.png" />
 <meta property="og:image:width" content="312" />
 <meta property="og:image:height" content="312" />
 <meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
-<meta property="og:url" content="https://yuanlucas.github.io/about.html"/>
+<meta property="og:url" content="https://yuanlucas.github.io/posts/information_theory/"/>
 <meta property="og:site_name" content="klucas 的个人网站" />
 <meta property="og:locale" content="zh-CN"/>
 <meta property="article:author" content="klucas" />
-<meta property="article:published_time" content="2022-07-25 15:25:00 &#43;0800 CST" />
-<meta property="article:modified_time" content="2022-07-25 15:25:00 &#43;0800 CST" />
+<meta property="article:published_time" content="2022-10-28 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2022-10-28 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -43,7 +43,7 @@
       content: "~ 我可是有底线的哟 ~";
     }
   </style>
-  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"about.html","permalink":"https://yuanlucas.github.io/about.html","title":"关于一切"}</script>
+  <script class="next-config" data-name="page" type="application/json">{"comments":false,"isHome":false,"isPage":true,"path":"information_theory","permalink":"https://yuanlucas.github.io/posts/information_theory/","title":"信息论"}</script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     var script = document.createElement('script');
@@ -65,7 +65,7 @@
 
 
 
-  <title>关于一切 - klucas 的个人网站</title>
+  <title>信息论 - klucas 的个人网站</title>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -111,7 +111,7 @@
       </a>
     </li>
     <li class="menu-item menu-item-about">
-      <a href="/about.html" class="hvr-icon-pulse  menu-item-active" rel="section"><i class="fa fa-user hvr-icon"></i>关于
+      <a href="/about.html" class="hvr-icon-pulse " rel="section"><i class="fa fa-user hvr-icon"></i>关于
       </a>
     </li>
     <li class="menu-item menu-item-archives">
@@ -131,7 +131,7 @@
   <span class="toggle-line"></span>
 </div>
 <aside class="sidebar">
-  <div class="sidebar-inner sidebar-overview-active">
+  <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
     <ul class="sidebar-nav">
       <li class="sidebar-nav-toc">
         文章目录
@@ -143,6 +143,37 @@
     <div class="sidebar-panel-container">
       
       <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-熵">1. 熵</a>
+      <ul>
+        <li><a href="#11-香农熵">1.1 香农熵</a>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+        <li><a href="#12-von-neumann-熵">1.2 Von Neumann 熵</a>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+        <li><a href="#13-holevo-bound">1.3 Holevo bound</a>
+          <ul>
+            <li><a href="#不能用n个qubit传递n-bit的信息">不能用\(n\)个qubit传递\(n\) bit的信息</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#2-信息论">2. 信息论</a>
+      <ul>
+        <li><a href="#21-shannons-noiseless-channel-coding-theorem无失真信源编码定理">2.1 Shannon&rsquo;s noiseless channel coding theorem（无失真信源编码定理）</a></li>
+        <li><a href="#22-schumachers-noiseless-channel-coding-theorem">2.2 Schumacher&rsquo;s noiseless channel coding theorem</a></li>
+        <li><a href="#23-shannons-noisy-channel-coding-theorem">2.3 Shannon&rsquo;s noisy channel coding theorem</a></li>
+        <li><a href="#24-holevo-schumacher-westmoreland-hsw-theorem">2.4 Holevo-Schumacher-Westmoreland (HSW) theorem</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
       </div>
       
       <div class="site-overview-wrap sidebar-panel">
@@ -232,7 +263,7 @@
       
   <div class="post-block">
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://yuanlucas.github.io/about.html">
+    <link itemprop="mainEntityOfPage" href="https://yuanlucas.github.io/posts/information_theory/">
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/imgs/my_avatar.png">
       <meta itemprop="name" content="klucas">
@@ -242,11 +273,11 @@
       <meta itemprop="description" content="一位喜欢撸猫的研究僧。">
     </span>
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="关于一切">
-      <meta itemprop="description" content="欢迎来到我的个人网站！ 关于我 从 USTB 到 USTC 读研的物理系学生。 喜欢打游戏、撸猫、看书、听歌，折腾新技术。 对一切知识都很感兴趣。 关于本站 正值研究生开学">
+      <meta itemprop="name" content="信息论">
+      <meta itemprop="description" content="  本文总结经典信息论和量子信息论的一些要点。经典部分写的稍微简单点。">
     </span>
     <header class="post-header">
-       <h1 class="post-title" itemprop="name headline">关于一切 </h1> <div class="post-meta-container">
+       <h1 class="post-title" itemprop="name headline">信息论 </h1> <div class="post-meta-container">
   <div class="post-meta-items">
     
 
@@ -256,7 +287,7 @@
     <i class="far fa-calendar"></i>
   </span>
   <span class="post-meta-item-text">发表于：</span>
-  <time title="发表于：2022-07-25 15:25:00 &#43;0800 CST" itemprop="dateCreated datePublished" datetime="2022-07-25 15:25:00 &#43;0800 CST">2022-07-25</time>
+  <time title="发表于：2022-10-28 00:00:00 &#43;0000 UTC" itemprop="dateCreated datePublished" datetime="2022-10-28 00:00:00 &#43;0000 UTC">2022-10-28</time>
 </span>
     
     
@@ -267,7 +298,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>183</span>
+  <span class="post-meta-item-text">字数：</span><span>1832</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -275,7 +306,7 @@
     <i class="far fa-clock"></i>
   </span>
   <span class="post-meta-item-text">阅读：&asymp;</span>
-  <span>1分钟</span>
+  <span>4分钟</span>
 </span>
 
     
@@ -286,7 +317,7 @@
   <span class="post-meta-item-text">
   浏览：
   </span>
-  <span class="waline-pageview-count" data-path="/about.html"><i class="fa fa-sync fa-spin"></i></span>
+  <span class="waline-pageview-count" data-path="/posts/information_theory/"><i class="fa fa-sync fa-spin"></i></span>
 </span>
 
   </div>
@@ -296,41 +327,220 @@
     </header>
     <div class="post-body" itemprop="articleBody">
       
-  <p>欢迎来到我的个人网站！</p>
-<h1 id="关于我">关于我</h1>
-<p>从 USTB 到 USTC 读研的物理系学生。</p>
-<p>喜欢打游戏、撸猫、看书、听歌，折腾新技术。</p>
-<p>对一切知识都很感兴趣。</p>
-<h1 id="关于本站">关于本站</h1>
-<p>正值研究生开学前的暑假，<code>HRZ</code>大佬与我分享了他用<code>Hugo</code> 引擎制作的网站。</p>
-<p>“不如我也做一个。”于是我就做了这个网站。</p>
-<p>由于没有计算机背景，一切从头学起可能做的比较粗糙。</p>
-<p>计划在这里分享我的笔记，记录生活中有意思的人和事。</p>
-<h1 id="如果你想联系我">如果你想联系我</h1>
-<ul>
+  <p>  本文总结经典信息论和量子信息论的一些要点。经典部分写的稍微简单点。</p></p>
+<hr>
+<details><summary>写在前面的一些吐槽</summary>
+~~为什么要有期中考试啊~~😟😟😟
+</details>
+<h1 id="1-熵">1. 熵</h1>
+<h2 id="11-香农熵">1.1 香农熵</h2>
+<p>事件集合和对应概率分别为：
+$$
+X=\{x_1,x_2,\dots,x_n\}
+$$
+$$
+P=\{p_1,p_2,\dots,p_n\}
+$$</p>
+<h4 id="香农熵定义常以2为底">香农熵定义（常以2为底）：</h4>
+<p>$$
+H(X)\equiv H(p_1,\dots,p_n)=-\sum_x p_x \log p_x\in[0,\log n]
+$$</p>
+<h4 id="相对熵kullback-leibler-散度">相对熵（Kullback-Leibler 散度）：</h4>
+<p>$$
+D\left(p(x)||q(x)\right)\equiv\sum_x p(x)\log\frac{p(x)}{q(x)}\equiv-H(X)-\sum_x p(x)\log q(x)
+$$</p>
+<h4 id="联合熵">联合熵：</h4>
+<p>$$
+H(X,Y)\equiv-\sum_{x,y}p(x,y)\log p(x,y)
+$$</p>
+<h4 id="条件熵">条件熵：</h4>
+<p>$$
+H(X|Y)\equiv H(X,Y)-H(Y)
+$$</p>
+<h4 id="互信息有的书上用hxy表示">互信息（有的书上用\(H(X:Y)\)表示）：</h4>
+<p>$$
+I(X;Y)\equiv H(X)+H(Y)-H(X,Y)
+$$</p>
+<h2 id="12-von-neumann-熵">1.2 Von Neumann 熵</h2>
+<h4 id="von-neumann-熵定义为">Von Neumann 熵定义为：</h4>
+<p>$$
+S(\rho)\equiv-\mathrm{Tr}(\rho\log\rho)=-\sum_x a_x\log a_x
+$$</p>
+<p>其中\(a_x\)是\(\rho\)的本征值。</p>
+<h4 id="量子相对熵">量子相对熵：</h4>
+<p>$$
+S(\rho||\sigma)\equiv\mathrm{Tr}(\rho\log\rho)-\mathrm{Tr}(\rho\log\sigma)
+$$</p>
+<h4 id="量子联合熵">量子联合熵：</h4>
+<p>$$
+S\left(\sum_i p_i \ket{i}\bra{i}\otimes\rho_i\right)=H(p_i)+\sum_i p_i S(\rho_i)
+$$</p>
+<p>\(\ket{i}\)是一组正交基。</p>
+<p>特别的，如果密度矩阵能写成张量积形式，其联合熵为：
+$$
+S(\rho\otimes\sigma)=S(\rho)+S(\sigma)
+$$</p>
+<h4 id="量子条件熵">量子条件熵：</h4>
+<p>$$
+S(A|B)\equiv S(A,B)-S(B)
+$$</p>
+<h4 id="量子互信息">量子互信息：</h4>
+<p>$$
+S(A:B)\equiv S(A)+S(B)-S(A,B)
+$$</p>
+<p>性质：</p>
+<ol>
 <li>
-<p><code>邮箱</code>: 
-<a href="mailto:yuanzheheng@sina.com" title="yuanzheheng@sina.com" >
-    yuanzheheng@sina.com
-</a></p>
+<p>Concavity
+$$
+S\left(\sum_i p_i \rho_i\right)\ge\sum_i p_i S(\rho_i)
+$$</p>
 </li>
 <li>
-<p><code>GitHub</code>: 
-<a href="https://github.com/YuanLucas" title="https://github.com/YuanLucas" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
-    https://github.com/YuanLucas
+<p>Subadditivity &amp; Triangle inequality (Araki-Lieb inequality)
+$$
+|S(A)-S(B)|\le S(A,B)\le S(A)+S(B)
+$$</p>
+</li>
+<li>
+<p>Strong Subadditivity
+$$
+S(A,B,C)+S(B)\le S(A,B)+S(B,C)
+$$</p>
+</li>
+</ol>
+<h2 id="13-holevo-bound">1.3 Holevo bound</h2>
+<p>考虑一个量子信息的传递过程：</p>
+<p>  Alice向Bob发送量子态\(\{\rho_X\}\)，\(X=0,\dots,n\)，概率为\(p_0,p_1,\dots,p_n\)。Bob在收到量子态之后，实施一组POVM测量\(\{F_y\}=\{F_0,F_1,\dots,F_m\}\)，得到结果为\(\{Y\}\)。
+$$
+\text{Alice}\xrightarrow{\{X,p_X\}}\fbox{Encoding}\xrightarrow{\mathcal{E}=\{\rho_X,p_X\}}\fbox{POVM}\xrightarrow{\{Y,p_Y\}}\text{Bob}
+$$</p>
+<p>Holevo证明互信息存在上限：
+$$
+\chi\equiv S\left(\sum_x p_x\rho_x\right)-\sum_x p_x S(\rho_x)
+$$
+$$
+I(X;Y)\le\chi
+$$</p>
+<p>Bob从\(Y\)中可得到的关于\(X\)的信息量为：
+$$
+I_{acc}(\mathcal{E})=\max_{\{F_y\}}I(X;Y)
+$$</p>
+<p>于是有：
+$$
+I_{acc}(\mathcal{E})\le\chi
+$$</p>
+<h3 id="不能用n个qubit传递n-bit的信息">不能用\(n\)个qubit传递\(n\) bit的信息</h3>
+<p>  假设{0,1}均匀分布，Alice做一种编码：
+$$\begin{align}
+&amp;0\longrightarrow\ket{0}\\
+&amp;1\longrightarrow\cos\theta\ket{0}+\sin\theta\ket{1}
+\end{align}$$</p>
+<p>其密度矩阵为：
+$$
+\rho=\frac{1}{2}\begin{bmatrix}
+1&amp;0\\
+0&amp;0\end{bmatrix}
++\frac{1}{2}\begin{bmatrix}
+\cos^2\theta&amp;\cos\theta\sin\theta\\
+\cos\theta\sin\theta&amp;\sin^2\theta\end{bmatrix}
+$$</p>
+<p>本征值为\((1\pm\cos\theta)/2\)。</p>
+<p>计算Holevo上界
+$$
+\chi=H\left(\frac{1\pm\cos\theta}{2}\right)\le 1\text{bit}
+$$</p>
+<p>  因此，对于不取等号的情况，不能用一个qubit传递1bit的信息。这个结论可以进行推广。</p>
+<p>数学上有
+$$
+S(\rho)-\sum_x p_x S(\rho_x)\le H(X)
+$$</p>
+<p>  因此，如果将\(n\) bit的信息\(X\)编码在\(n\)个qubit上，那么POVM测量后可以得到的关于\(X\)的信息为：
+$$
+I_{acc}(\mathcal{E})\le\chi\le H(X)= n\ \text{bit}
+$$</p>
+<p>  等号成立的情况是比较特殊的，对于大部分情况，等号是不成立的。因此，不能用\(n\)个qubit传递\(n\) bit的信息。</p>
+<p>  关于用\(n\)个qubit编码\(m\) bit的二元序列，Nayek有一个描述解码正确概率的公式：
+$$
+\mathrm{P}(X=Y)\le\frac{2^n}{2^m}
+$$</p>
+<p>同样可以解释为什么不能用\(n\)个qubit传递\(n\) bit的信息。</p>
+<p>证明参考UCB的讲义：</p>
+<p>
+<a href="https://people.eecs.berkeley.edu/~vazirani/s07quantum/notes/lec17/lec17.pdf" title="https://people.eecs.berkeley.edu/~vazirani/s07quantum/notes/lec17/lec17.pdf" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    https://people.eecs.berkeley.edu/~vazirani/s07quantum/notes/lec17/lec17.pdf
     <i class="fa fa-external-link-alt"></i>
 </a></p>
-</li>
-</ul>
-
+<h1 id="2-信息论">2. 信息论</h1>
+<p>熵率的定义：
+考虑一个长度为n的序列的熵，当n趋向无穷的极限即为熵率。
+$$
+H(\chi)\equiv\lim_{n\to\infty}\frac{1}{n}H(X_1,X_2,\dots,X_n)
+$$</p>
+<h2 id="21-shannons-noiseless-channel-coding-theorem无失真信源编码定理">2.1 Shannon&rsquo;s noiseless channel coding theorem（无失真信源编码定理）</h2>
+<p>经典信息编码和解码的过程：
+$$
+\fbox{\(x_1\dots x_n\)}\xrightarrow{C^n}\fbox{\(x_1&rsquo;\dots x_m&rsquo;\)}\xrightarrow{D^n}\fbox{\(x_1&rsquo;&rsquo;\dots x_n&rsquo;&rsquo;\)}
+$$</p>
+<p>  \(C^n\)将序列\(x=(x_1,\dots,x_n)\)映射为长度为\(nR\)的二元序列。\(D^n\)将长度为\(nR\)的二元序列映射为\(x=(x_1&rsquo;&rsquo;,\dots,x_n&rsquo;&rsquo;)\)。</p>
+<p>  考虑一个独立同分布信源\(\{X_i\}\)，其熵率为\(H(X)\)。则对于\(R&gt;H(X)\)，存在可靠编码方式；对于\(R&lt;H(X)\)，不存在可靠编码方式。</p>
+<p>可靠的意思是指当序列长度趋向无穷以后，解码后的序列等于原始序列的概率趋向1：
+$$
+\lim_{n\to\infty}\mathrm{P}\left(D^n(C^n(x))=x\right)=1
+$$</p>
+<h2 id="22-schumachers-noiseless-channel-coding-theorem">2.2 Schumacher&rsquo;s noiseless channel coding theorem</h2>
+<p>量子信息编码和解码的过程：
+$$
+\fbox{\(\rho\)}\xrightarrow{\mathcal{C}^n}\fbox{\(\rho&rsquo;\)}\xrightarrow{\mathcal{D}^n}\fbox{\(\rho&rsquo;&rsquo;\)}
+$$</p>
+<p>  \(\mathcal{C}^n\)将\(H^{\otimes n}\)中的态映射为\(2^{nR}\)维空间的一个态。\(\mathcal{D}^n\)将\(2^{nR}\)维空间的一个态映射为\(H^{\otimes n}\)中的态。</p>
+<p>  考虑一个独立同分布量子信源\(\{H,\rho\}\)。则对于\(R&gt;S(\rho)\)，存在可靠编码方式；对于\(R&lt;S(\rho)\)，不存在可靠编码方式。</p>
+<p>可靠的意思是指当序列长度趋向无穷以后，原始序列和解码后的序列之间的保真度趋向1：
+$$
+\lim_{n\to\infty}F(\rho^{\otimes n},\mathcal{D}^n\circ\mathcal{C}^n)=1
+$$</p>
+<h2 id="23-shannons-noisy-channel-coding-theorem">2.3 Shannon&rsquo;s noisy channel coding theorem</h2>
+<p>  对于噪声信道\(\mathcal{N}\)，信道容量\(C(\mathcal{N})\)定义为每次使用信道时可以无错误地传输的最大信息量。
+$$
+C(\mathcal{N})=\max_{p(x)}I(X;Y)
+$$</p>
+<h2 id="24-holevo-schumacher-westmoreland-hsw-theorem">2.4 Holevo-Schumacher-Westmoreland (HSW) theorem</h2>
+<p>  假设编码函数将序列\(x=(x_1,\dots,x_n)\)映射为张量积形式的密度矩阵\(\rho_1\otimes\rho_2\otimes\dots\)，这种前提下的信道容量记为\(C^{(1)}(\mathcal{E})\)。假设\(\mathcal{E}\)具有保迹性。
+$$
+C^{(1)}(\mathcal{E})=\chi(\mathcal{E})\equiv\max_{\{p_j,\rho_j\}}\left[S\left(\mathcal{E}\left(\sum_j p_j \rho_j\right)\right)-\sum_j p_j S(\mathcal{E}(\rho_j))\right]
+$$</p>
+<p>对于编码函数将经典信息编码为纠缠态的情况，猜测其信道容量的上限也为上式，但是还没有得到证明。</p>
 
     </div>
     <footer class="post-footer">
       
 
+<div class="post-tags">
+  
+    <a href="/tags/%e9%87%8f%e5%ad%90%e4%bf%a1%e6%81%af">
+    量子信息
+  </a>
+</div>
+
+<div class="addthis_inline_share_toolbox" style="text-align: center;"></div>
 <hr/>
 
 
+
+
+<div class="post-nav">
+  <div class="post-nav-next post-nav-item">
+    <a href="https://yuanlucas.github.io/posts/schrieffer_wolff_transformation/" rel="next" title="Schrieffer Wolff Transformation">
+      <i class="fa fa-chevron-left"></i> Schrieffer Wolff Transformation
+    </a>
+  </div>
+  <div class="post-nav-prev post-nav-item">
+    <a href="https://yuanlucas.github.io/posts/lerangdre_transformation/" rel="prev" title="勒让德变换">
+      勒让德变换
+      <i class="fa fa-chevron-right"></i>
+    </a>
+  </div>
+</div>
     </footer>
   </article>
 </div>

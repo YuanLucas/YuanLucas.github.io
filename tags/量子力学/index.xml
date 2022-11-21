@@ -6,7 +6,16 @@
     <description>Recent content in 量子力学 on klucas 的个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 09 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/tags/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/tags/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Schrieffer Wolff Transformation</title>
+      <link>https://yuanlucas.github.io/posts/schrieffer_wolff_transformation/</link>
+      <pubDate>Tue, 08 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/schrieffer_wolff_transformation/</guid>
+      <description>&lt;p&gt;  本文讨论Schrieffer Wolff Transformation。&lt;/p&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>CHSH不等式</title>
       <link>https://yuanlucas.github.io/posts/chsh%E4%B8%8D%E7%AD%89%E5%BC%8F/</link>
