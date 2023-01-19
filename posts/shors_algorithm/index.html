@@ -268,7 +268,7 @@
   <span class="post-meta-item-icon">
     <i class="far fa-file-word"></i>
   </span>
-  <span class="post-meta-item-text">字数：</span><span>946</span>
+  <span class="post-meta-item-text">字数：</span><span>991</span>
 </span>
     
 <span class="post-meta-item" title="阅读">
@@ -323,7 +323,7 @@ x=16,r=49
 <p>$$
 (14\ 351)_{10}=(11\ 100\ 000\ 001\ 111)_2
 $$</p>
-<p>一共是14比特，如果希望最终结果错误率\(\epsilon\le1\%\)，则至少需要35个\(\ket{0}\)。</p>
+<p>一共是14比特，如果希望最终结果错误率\(\epsilon\le1\%\)，则至少需要35个\(\ket{0}\)。还至少需要14个qubit来储存\(\ket{2^j\bmod14\ 351}\)的结果。</p>
 <p>下面开始计算：</p>
 <ol>
 <li>
@@ -333,7 +333,7 @@ $$</p>
 <p>35个Hadamard门作用在\(\ket{0}^{\otimes35}\)上，将其变换为\(\frac{1}{\sqrt{2^{35}}}\sum_{j=0}^{2^{35}-1}\ket{j}\ket{1}^{\otimes14}\)；</p>
 </li>
 <li>
-<p>通过黑匣子将状态变为\(\frac{1}{\sqrt{2^{35}}}\sum_{j=0}^{2^{35}-1}\ket{j}\ket{2^j\bmod8\ 633}\)</p>
+<p>通过黑匣子将状态变为\(\frac{1}{\sqrt{2^{35}}}\sum_{j=0}^{2^{35}-1}\ket{j}\ket{2^j\bmod14\ 351}\)</p>
 </li>
 <li>
 <p>对后14个qubit作QFT量子傅立叶变换，前35个qubit的状态变为\(\sum_ya_y\ket{y}\)，相对概率画出来是这样的：</p>
