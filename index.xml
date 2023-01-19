@@ -6,7 +6,26 @@
     <description>Recent content on klucas 的个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 08 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一道Shor算法的例题</title>
+      <link>https://yuanlucas.github.io/posts/shors_algorithm/</link>
+      <pubDate>Wed, 18 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/shors_algorithm/</guid>
+      <description>&lt;p&gt;  试试看用Shor算法分解一个比较大的数\(N\)。具体方法Nielson的那本书写的很清楚。&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;  真正试过才知道为什么例题总是给\(N=15\)这样小的数，数字大了经典计算机根本解不动\(r\text{ s.t. }x^r\equiv1\pmod{N}\)；QFT分解部分，数字大了经典计算机也算不动。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>从Josephson结到超导量子比特</title>
+      <link>https://yuanlucas.github.io/posts/josephson_junction/</link>
+      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/josephson_junction/</guid>
+      <description>&lt;p&gt;  本文讨论Josephson Junction。&lt;/p&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Schrieffer Wolff Transformation</title>
       <link>https://yuanlucas.github.io/posts/schrieffer_wolff_transformation/</link>
@@ -94,6 +113,7 @@
       
       <guid>https://yuanlucas.github.io/posts/%E8%B6%85%E5%AF%BC%E7%90%86%E8%AE%BA%E4%B8%80/</guid>
       <description>&lt;p&gt;  本文主要讨论London方程，Pippard理论和Ginzburg-Landau(GL)理论。&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;  本文还未引入Cooper对的概念，实际使用时，需要将\(e,m\)修正为\(2e,2m\)。&lt;/p&gt;
 &lt;p&gt;参考文献：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;张裕恒，超导物理&lt;/li&gt;

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>量子计算 on klucas 的个人网站</title>
+    <link>https://yuanlucas.github.io/tags/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/</link>
+    <description>Recent content in 量子计算 on klucas 的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 18 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yuanlucas.github.io/tags/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一道Shor算法的例题</title>
+      <link>https://yuanlucas.github.io/posts/shors_algorithm/</link>
+      <pubDate>Wed, 18 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuanlucas.github.io/posts/shors_algorithm/</guid>
+      <description>&lt;p&gt;  试试看用Shor算法分解一个比较大的数\(N\)。具体方法Nielson的那本书写的很清楚。&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;  真正试过才知道为什么例题总是给\(N=15\)这样小的数，数字大了经典计算机根本解不动\(r\text{ s.t. }x^r\equiv1\pmod{N}\)；QFT分解部分，数字大了经典计算机也算不动。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
